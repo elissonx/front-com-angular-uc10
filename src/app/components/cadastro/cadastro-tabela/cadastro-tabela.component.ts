@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-tabela',
@@ -8,24 +7,9 @@ import { Router } from '@angular/router';
 })
 export class CadastroTabelaComponent implements OnInit {
 
-  constructor(private router: Router ) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  createCadastro(): void{
-    this.router.navigate(['/cadastro'])
-  
-  }
-
-  pageHome(): void{
-    this.router.navigate([''])
-
-  }
-
-  tabelasCadastro(): void{
-    this.router.navigate(['/cadastro/tabela'])
-
   }
 
 }
